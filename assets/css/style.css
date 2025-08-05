@@ -289,3 +289,11 @@ header {
     color: var(--color_text-tertiary);
 }
 
+.image__about {
+    width: 100%;
+    display: flex;
+}
+
+.image__about img {
+    width: 300px;
+}
