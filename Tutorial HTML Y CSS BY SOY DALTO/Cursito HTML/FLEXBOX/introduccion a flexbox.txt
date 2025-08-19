@@ -1,0 +1,130 @@
+- INTRODUCCION A FLEXBOX - BY SOY DALTO
+
+¿QUE ES FLEXBOX?
+
+1. Es un tipo de modelo de caja, modulo de css, necesitamos que las cajas sean flexibles y el contenido tambien, se vayan adaptando, sin importar el tamaño que tenga, se iran adaptando al contenido que esta tenga.
+
+2. La caja se comporta como un bloque pero los elementos tendra un compartamiento flexible.
+
+! No es a la caja a la que se aplica las propiedades si no al contenido que esta adentro !
+
+! Los items flexibles son solamente los hijos directos de la caja flexible !
+
+! Se pueden encoger pero no se pueden agrandar las cajas flexibles !
+
+- FLEX DIRECTION -
+
+1. Dar direccion a una caja flexible ya sea en row, column, row-reverse, column-reverse.
+
+/display-direction:row;, valor row hace referencia a que los elementos van a fila siguiendo la direccion del texto./
+
+/display-direction:row-reverse;, valor row hace referencia a que los elementos van a en contra de la direccion del texto./
+
+/display-direction:column;, los elementos van de arriba hacia abajo./
+
+/display-direction:column-reverse;, los elementos van de abajo hacia arriba./
+
+! Si no se designa un ancho, el cross axis va a tomar todo el ancho !
+
+! direction: ;, modifica la fila a favor de la direccion del texto  ya sea ltr, rtl.!
+
+- FLEX WRAP & FLEX FLOW-
+
+1. FLEX WRAP, hace que la cajas puedan ponerse abajo.
+
+! Se le da a la caja contenedora no a los hijos !
+
+/flex-wrap: wrap; valor wrap, define que la caja no se encogera si no se ira para abajo./
+
+/flex-wrap: wrap-reverse; valor wrap, define que la caja no se encogera si no se ira para arriba./
+
+
+2. FLEX FLOW, habla del flujo flexible, nos permite definir la direccion y el wrap.
+
+- ALINEACION FLEX WRAP & FLOW FLOW
+
+JUSTIFY CONTENT eje principal
+
+1. Justify Content es una propiedad que habla del eje principal, alinea los item de acuerdo al eje.
+
+/justify-content: start;, Valor start, estara alineado a la direccion del texto./
+
+/justify-content: end;, Valor end, estara alineado al final del eje./
+
+/justify-content: space-between;, Valor space between, pone al primer elemento al principio, el tercero al final y los que esten en el medio van a distribuir el espacio, van a distribuir el espacio en el medio../
+
+/justify-content: space-around;,Valor around, hace que cada elemento tenga una separacion igual, van a tener una margen al costado que sera el mismo que tiene hacia el otro costado./
+
+/justify-content: space-evenly; Valor evenly, hace que tenga el mismo espacio, lo espacios seran exactamente mismo, entre si y los bordes. /
+
+! EL REVERSE NO CAMBIA LA DIRECCION DE ALINEAMIENTO, SOLO EL ORDEN LOS ITEM !
+
+ALIGN ITEMS EJE CRUZADO:
+
+1. Genera una alineacion a los items en el eje cruzado.
+
+/align-items: stretch;, valor stretch, los item se estiran para llenar el contenedor./
+
+/align-items: start; valor start, solamente estaran ocupando el contenido que tienen adentro y los posiciona al principio./
+
+/align-items: end; valor end, solamente estaran ocupando el contenido que tienen adentro y los posiciona al final./
+
+/align-items: center; valor center, posiciona los items al centro./
+
+/align-items: baseline; valor baseline, se posiciona segun la linea base del texto, se intenta poner todo a la misma altura, para que el texto este relativamente centrado../
+
+! Recomendado usar en una sola linea!
+
+ALING CONTENT EJE CRUZADO:
+
+!Recomendado usar para varias lineas!
+
+
+/ PROPIEDADES PARA HIJOS flex-items /
+
+- ORDER FLEX FLOW & FLEX DIRECTION
+
+1. Modificar el orden el que se representa visualmente los elementos en la pantalla.
+
+! SOLAMENTE MODIFICAR DE MANERA VISUAL, PERO EN EL CODIGO SERAN SIENDO LO MISMO !
+
+
+
+- FLEX BASIS, SHRINK Y FLEX GROW 
+
+2. Flex items son los hijos directos de una flex box.
+
+
+FLEX GROW: Permite que las propiedades crezcan, agarra los espacios disponibles, cada elemento tendra una parte de ese espacio disponible.
+
+
+FLEX SHRINK: Permite definir hasta cuanto se podra encoger los elementos de la flex box.
+
+FLEX BASIS: Permite definir el tamaño base, esto es lo maximo que te puedes achicar antes de encojerte, define a direccion a la que apunta el elemento.
+
+VALORES POR DEFECTO DE ESTAS 3 PROPIEDADES:
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: auto;
+
+
+GAP: La separacion de los elementos entre si para los item de flex blox.
+
+
+- Align Self
+
+1. Align Self solo fuciona cuando usamos la propiedad align items.
+
+2. Para seleccionar puntualmente un elemento de la caja flex box.
+
+! Modificar solamente un ITEM !
+
+
+- LAYOUT CON FLEXBOX -
+
+1. Layout es una forma de distribuir los elementos, el contenido para que todo se acomode en la pagina y se adapte a todos los dispositivos.
+
+
+
+
+

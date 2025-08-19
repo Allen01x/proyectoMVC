@@ -1,0 +1,195 @@
+
+    - INTRODUCCION A CSS By: Soy Dalto -
+
+ 1. Hoja De Estilo En Cascada hace analogia a la cascada el agua que cae y sobreescribir propiedades.
+ 2. Entender como funciona cada propiedad y las combinaciones.
+
+ - ¿Como integrar CSS a un HTML? 
+ Tenemos 3 formas para enlazar CSS
+ 1. Por medio de estilos en linea ejm; (atributo style=" "), se le suele dar en una sola linea, este es una mala practica para usar CSS (No se recomienda para nada).
+ 2. Utilizando style por medio de etiqueta propia ejm; (<style> p { color : red } </style>), tampoco se recomienda esta forma para nada.
+ 3. Por medio de un archivo separado y enlazarlo por medio de la etiqueta; <link rel="stylesheet" href="">. (La mejor y la mas recomendable para CSS)
+ ! La etiqueta se pone siempre en el HEAD !
+ Atributos etiqueta link:
+ / rel="" -> Que relacion tiene el archivo con la pagina. /
+ / href="" -> Para poner en enlace. /
+ 
+ - ¿Como seleccionar elementos?
+ Por medio de su nombre y asi mismo escogeria a todos ellos de manera global ejm: p (esta usando todos los p) y usamos el simbolo de llaves {} nos indican que estamos abriendo un bloque de declaraciones.
+ Selectores: 
+1. Por medio de etiqueta: <span> -> para eligir algo muy puntual (No es lo mas recomendable o usado).
+2. Por medio de clases con el atributo class="" y para selecionarlo en CSS usamos el simbolo.
+3. Por medio de identificadores unicos (se le da a 1 elemento en toda la pagina, no se recomienda repetir el mismo ID) se selecciona por medio del signo #.
+4. Podemos crear dentro de una clase otra clase y asi sucesivamente.
+
+- Propiedades Basicas de Fuente y Texto:
+1. Se utiliza ; para cerrar propiedades.
+* color: Para cambiar el color del text (se recomienda utilizar colores fijos).
+* font-family: Para cambiar la tipografia.
+! Podemos usar una sola tipografia por medio de su configuracion o comillas simples !
+! Usamos , para agregar varias tipografias de izquierda a derecha se leen !
+* font-size: Para cambiar el tamaño del texto.
+! Los podemos medir el tamaño por pixeles, em, porcentajes etc. !
+* font-weight: Para cambiar el grosor de la tipografia.
+1. Las tipografias se definen por un grosor ya sea de 100 a 900 (dependiendo si el autor definio todas o solo algunas).
+2. Entre mas chiquito el numero mas finito sera y entre mas grande mas grueso sera.
+! Se recomienda poner en negrita por medio del atributo BOLD en css y no en html con la etiqueta. !
+! El atributo BOLD establece 700 de grosor y el bolder va un paso mas y establece un valor mas alto de grosor. !
+* font-style: Establece el estilo de la fuente.
+Atributos font-style:
+/ Italic: Formato inclinado. /
+/ Normal: Formato predeterminado. /
+/ oblique: Formato un poco inclinado. /
+* text-align: 
+1. Alinea el texto que se encuentra en su contenedor.
+Atributos text-align:
+/ left: Arrancar el texto de izquierda a derecha. /
+/ Right: Arrancar el texto de derecha a izquierda. /
+/ Center: Centra el texto /
+/ Justify: Intenta que todos los elementos lleguen al final de la linea para tener un orden (lo intenta). /
+/ Start: Alinear la letra hacia donde se comienza a escribir de izquierda o derecha /
+* text-decoration:
+1. Brinda una decoracion al texto.
+2. Pueden ser mezclada unas con otras.
+Atributos text-decoration:
+/ underline: Nos pone el texto a subrayado por debajado. /
+/ overline: Nos pone el texto a subrayado por arriba. /
+/ line-through: Nos pone un texto tachado. /
+/ none: No tenga ninguna decoracion el texto. /
+* line-height:
+1. Define el espaciado de la letra o tamaño de la linea.
+* letter-spacing:
+1. Define el espacio entre letras.
+* text-transform:
+1. Transformar el texto.
+Atributos text-transform:
+/ uppercase: Transformar a mayusculas el texto. /
+/ lowercase: Transformar a minisculas el texto. /
+/ Capitalize: Transformar la primera letra de cada palabra en mayusculas. /
+
+- ¿Como agregar y utilizar tipografias externas?
+Tenemos 2 formas:
+1. Por medio de Google Fonts seleccionando la tipografia y su version que nos guste, luego le damos a Get Font y seleccionamos las que nos gusten y luego vamos a HTML code y lo copiamos dentro de HEAD y llamamos por medio de css font-family a la tipografia.
+2. Por medio de un archivo CSS (mas avanzado), creamos un nuevo archivo y luego en Google Fonts le damos a instalar la tipografia y la pegamos en la carpeta deseada, luego utilizamos la Variable @font-face, para declarar la tipografia y formato (true-type) y peso.
+
+- Box Model
+1. Modelo De Caja describe como se diseña y se ponen los elementos en HTML en una pagina web, define.
+2. Una caja incluye varias propiedades tales como:
+Content: Es el area donde se muestra el texto o otro contenido.
+* Padding: Espacio entre el contenido y el borde del elemento, el espacio aumenta el area alrededor del contenido dentro del elemento bajo el borde (separa mas el contenido del borde)
+* Border: Una linea que rodea tanto el contenido y el paddling, se puede puede controlar el estilo, el grosor y el color de borde.
+* Margin: El espacio alrededor de la caja que esta afuera del borde, el espacio separa el elemento de otros elementos de la pagina, no hace forma de la caja, solo los separa de otras.
+* Width: Ancho de los elementos.
+* height: Alto de los elementos.
+
+- Padding and Margin
+1. El Paddling el espacio entre el contenido y el borde de una caja (aumenta el tamañado alrededor del contenido pero adentro de los bordes).
+Podemos separarlos de la siguiente manera:
+Manera manual cada linea:
+Padding-top= Arriba.
+Padding-bottom= Abajo.
+Padding-left= Izquierda.
+Padding-right= Derecha.
+Manera con 4 valores en una sola linea:
+! Van en el sentido de las manecillas de reloj !
+Arriba, Derecha, Abajo, Izquierda.
+Manera con 2 valores en una sola linea:
+! Definimos Arriba y abajo , Derecha e Izquierda !
+
+2. El Margin nos permite separar los elementos
+! Margin Colap: Los margenes en sentido vertical hacia arriba y hacia abajo se superponen, el margen mas grande es el que predomina, nos ahorran la tarea de calcular los pixeles exactos. !
+! La separacion total del margen mas grande. !
+3. Margin: auto; nos permite centrar los elementos horizontalmente ya que nos centra a lo ancho del total.
+
+- Border
+1. Permite modificar cuatro aspectos fundamentales de los bordes:
+Tamaño, Estilo, Color borde, Grosor del borde
+Etiquetas Border:
+* border-width: ; Ancho del borde.
+* border-color: ; Color del Borde.
+* border-style: ; Estilo del borde.
+* border-radius:; Grosor del borde.
+* Border:; Establece en una sola la propiedad, el ancho, el estilo y color del borde.
+
+2. Asi mismo podemos poner un borde en concreto ya sea arriba o abajo o en la derecha o izquierda.
+
+- Box Sizing
+1. Propiedad que utilizamos para afectar el tamaño de caja predeterminado, definimos el ancho y el alto del border y el paddling con respecto al tamaño del contenido.
+Propiedades Box Sizing:
+/  box-sizing: content-box, definir el ancho y el alto para solamente el contenido, lo que siga despues va seguir sumando. /
+/  box-sizing: border-box, definir el ancho y el alto de todo los valores /
+
+- ¿Como dar buenos colores a nuestra rica pagina WEB?
+1. Tenemos 3 tipos de colores diferentes y mas comunes son:
+RGB, RGBA, HSL, HSLA, HEXADECIMAL.
+
+RGB: Red Green Blue, los 3 colores primarios de la luz, tiene 256 posibles combinaciones por cada 1 de los valores:
+* R: Valor entre 0 y 255. ¿Cuanto Rojo va tener?
+* G: Valor entre 0 y 255. ¿Cuanto Verde va tener?
+* B: Valor entre 0 y 255. ¿Cuanto Azul va tener?
+
+RGBA: Crea otro canal de iluminacion llamado ALFA, controla la opacidad del conjunto de las 3 capas.
+* Pagina RGBA picker: para crear combinaciones de colores.
+
+HEXADECIMAL: Tenemos R G B pero nos volvemos en el sistema de hexadecimal que tiene 16 posibilidades:
+0 6 c
+1 7 d
+2 8 e
+3 9 f
+4 a
+5 b
+
+HSL: Se representan como un cilindro y tiene 3 partes fundamentales:
+Hue: Deteminar que color del espectro es.
+
+Saturation: Indica la intensidad de un tono concreto, los valores van de 0 a 100, siendo 100 el maximo de saturacion posible y el 0 el minimo, que dara como resultado, gris.
+
+Lightness: Hace referencia a como de calor u obscuro es un color, el 100%, es mas claro y el 0% lo mas obscuro.
+
+- Unidades de Medida CSS UNITS
+
+Medidas Absolutas:
+* Pixeles: Medidas Absolutas, una pequeña area de luz que tenemos en nuestra AREA, normalmente se usa para definir el tamaño de algunos elementos como el alto y ancho, el tamaño de textos, los margenes y los paddlings entre otras.
+
+Medidas Reales:
+
+* Milimetros, Centimetros y Pulgadas: Se usa para medidas que despues tienen un significado, definir diseños que se van imprimir o aplicadas de manera fisica y tambien para maquetar apps tactiles.
+
+Medidas Relativas: Unidad que depende de otro valor, importantes para el responsive design.
+* Porcentaje: Ocupa el porcentaje de su elemento contenedor.
+
+* EM: Va al elemento padre y lo multiplica por el numero que vamos a dar, en caso de que elemento padre no tenga ningun font-size definido ira escalando por jerarquia y buscando cual lo tiene y si ninguno lo tiene, se pondra por defecto que son 16px.
+
+* REM: Va al elemento raiz que en este caso es HTML y multiplica el font-size de HTML por el que nosotros le demos.
+
+* VH (ViewPortHeight): Medir la mitad del alto de la ventana. 
+* VW (ViewPortWidth): Medir la mitad del ancho de la ventana.
+
+- Propiedades para Fondos
+background-color: Color del fondo (el 4 numero es la transparencia).
+background-image: url (): Poner una imagen como fondo.
+background-size:, Modificar tamaño del background.
+background-size: contain, Obliga al contenedor a que la imagen entre, se ajusta lo mas posible.
+background-size: cover; Adaptar 100% la imagen, que se adapte completamente.
+background-position:, Configurar la position del fondo (top, right, bottom, left)
+background-repeat:, Estableces cuantas veces se repite la imagen.
+background-attachment:, Determina si la posicion del fondo sera fijo dentro de la pantalla o se desplazara con su contenedor.
+
+Propiedad global Background:
+background: url, position, size, attachment, color ejm: background: url(../CSS/Bordes/img/aloneman.jpg) top / cover fixed ;.
+
+- Gradientes
+1. Transicion de 1 valor a otro valor y que se convierta en una variacion mas claro o oscura.
+2. Podemos las combinaciones de colores que queramos sean 2 o 50 valores diferentes.
+Propiedades Gradientes:
+background: linear-gradient;, el background tendra un gradiente lineal (eligir 2 colores) (para darle direccion ponemos al principio TO)
+background: radial-gradient;, el background tendra un gradiente radial, es muy lindo para efectos especiales, un gradiente hacia el centro a partir del radio.
+background: conic-gradient;. 
+
+
+- Sombras:
+1. Usamos  box-shadow: para las sombras y tenemos 4 atributos de esa propiedad:
+Anchura (valor positivo a la derecha, valor negativo a la izqueirda), Altura (Valor negativo hacia arriba y valor positivo hacia abajo), Radio de la sombra, Radio de propagacion
+2. Usamos text-shadow para poner sombras a un texto(Tas bien pornero xd), funciona igual, solo que nos nos pide la expasion de la sombra.
+3. Usamos box-shadow tambien para agregarle sombras a una etiqueta IMG.
+4. En caso de tener una imagen transparente osea sin fondo y que se vea una puta mierda con el box-shadow, utilizamos imagenes con canal ALFA, usamos filter: drop-shadow(0px 0px 3px #000);

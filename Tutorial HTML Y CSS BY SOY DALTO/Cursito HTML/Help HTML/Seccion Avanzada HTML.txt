@@ -1,0 +1,190 @@
+- AVANZADO HTML BY SOY DALTO -
+
+
+- MetaEtiquetas, Comentarios E Iconos:
+
+1. Las MetaTags tienen la finalidad de describir ciertos aspectos de nuestra pagina web, propociona informacion (Importante para el seo, importante para definir como se mostrara como enlace)
+Etiquetas y atributos de meta:
+
+/ <html lang="">, Establecer en que lenguaje estara la pagina web /
+
+/ <meta charset="">, Establecer la codificacion que se utilizara. (Se recomienda UTF-8 permite todos los caracteres del mundo) /
+
+! Todas las demas meta etiquetas tendra el atributo name="" y content="", ya no habra charset !
+
+/ name="", El nombre de lo que se esta declarando de la pagina /
+
+/ content="", el contenido que se declara /
+
+/ <meta name="viewport" content="width=device-width, initial-scale=1.0">, El width sera el igual al ancho total del dispositivo con el que se abra la pagina, el initial-scale representa el zoom, se restablecera el zoom a normal, cada vez que se aumente o disminuya. /
+
+/ <meta name="description" content="">, Brindar una descripcion de la pagina, no mas de 100 caracteres./
+
+/ <meta name="keywords" content="">, Brinda todas las palabras claves de nuestra pagina web y se separan con una (Cuando busque en google tendra mas chance que su pagina salgan mas arriba). /
+
+/ <meta name="author" content="">, Brinda la informacion de quien es el autor/es de la pagina. /
+
+/ <meta name="robots" content="">, Brinda una informacion para que solamente los motores de busquedad la lean y sepan que hacer/
+
+! content="nofollow", Para que nuestra pagina no se muestre en los resultados busqueda !
+! content="nosnippet", No se muestre ningun fragmento de nuestra pagina web en el resultado !
+! content="noarchive", Impedir que se google guarde una copia de nuestra pagina web (un cache) !
+! content="noimageindex", Impedir que se muestre nuestras imagenes de la pagina web en resultado de Imagenes. !
+
+2. Los comentarios es un codigo que solo es eligible para el desarollador, el navegador no interpreta ni hace nada con el, para dejarlos utilizamos la combinacion de control + }
+* Usamos el <!-- para abrir el comentario y --> para cerrarlo.
+
+3. Los favicons son los iconos que aparecen en la pestaña de la pagina.
+* <link rel="icon" href=" "> para poner el icono- (se recomienda una medida para el icono de 32x32 pixeles y estableces el type="" de nuestra imagen)
+
+- TEXTAREA
+1. Son como inputs pero nos ayuda a escribir mas texto.
+Propiedades y Atributos TEXTAREA:
+
+* <textarea></textarea>, brindar un espacio.
+
+/ <textarea readonly></textarea>, La persona solo pueda leer lo que esta dentro del textarea. /
+
+/ <textarea disabled></textarea>, No podemos hacer enfoque hacia el text area, el campo no se va enviar. /
+
+/ <textarea maxlenght=""></textarea>, Establecer maximo de caracteres que podra escribir la persona. /
+
+/ <textarea rows=""></textarea>, Establecer las lineas (columnas) que se permite escribir. /
+
+- Labels:
+1. Una forma de etiquetar individualmente un elemento de input.
+Etiquetas y Atributos:
+
+<label></label>, Agregar una informacion extra al elemento input.
+
+<label for=""></label>, Enlazar un elemento input individualmente para que cuando se haga click en el label, se posicione en el input deseado.
+! Es mas rapido dejar todos los input dentro de un solo Label !
+
+- Select, DataList, Option:
+
+1. Los select son un tipo de campo de entrada que nos permite seleccionar una opcion entre varias.
+
+! Dentro de este tiene la etiqueta option !
+
+/ <select name="" id="">
+<option value=""></option>
+</select> /
+
+2. Los DataList, un input, donde cuando escribimos algo se auto escribe segun la opcion que pongamos (tiene parte de select).
+! Dentro de este tiene la etiqueta option !
+
+* name="", valor para java script
+* id="", en caso de eligir un option en concreto o DataList
+* value="", valor para java script, podemos ponerlos las opciones dentro de este atributo.
+
+- Fieldset, Legend
+Se usan para agrupan y etiquetar los elementos dentro de un formulario.
+! Dentro del formulario ponemos la etiqueta Fieldset y luego dentro de la etiqueta Fieldset la etiqueta Legend !
+
+Etiquetas:
+/ <fieldset></fieldset>, genera un cuadro para seccionar el formulario /
+/ <legend></legend>, genera un descripcion a ese cuardo seccionado. /
+
+- Details, Summary:
+1. Proporcionan una funcionalidad natividad, para un menu desplegable que tiene un contenido cualquiera.
+Etiquetas:
+/<details></details>, contenido para crear el menu pegable./
+
+/<summary></summary>, contenido que se vera al desplegar el menu./
+
+-  Enlaces (Avanzado)
+1. Si se necesita redireccionar a un punto especifico se hace por medio de los ID del elemento.
+
+/ <a href="#privacy"></a>, aqui estamos enlazando hacia un id unico dentro de la pagina. /
+
+/<a href="terms.html" download></a>, con el atributo download nos permite descargar el archivo seleccionado. /
+
+! Cuando usamos el target="_blank", muchas veces cuando abrimos otra pestaña, puede pasar que la pestaña que estabamos viendo antes de abrir el enlace se haya cambiado por una maliciosa por ende usamos el rel="noopener", para evitar ese tipo de situacion en nuestra pagina. !
+
+/ <a href="" target="_blank" rel="noopener"></a>, atributo rel con su noopener evita este tipo de modificado de pagina a la hora de abrir un enlace en otra nueva pestaña y tambien mejora el rendimienot y evita ataques de phsishing. /
+
+/<a href="" target="_blank" rel="noreferrer"></a>, Similar a noopener, no permite acceso al elemento window.opener ni tampoco a los encabezados, es decir, nunca sabran de que pagina vino el enlace. /
+
+/<a href="" target="_blank" rel="nofollow"></a>, Para evitar las acciones de nuestros usuarios, ponemos nofollow ya que no se indexara ni tampoco importara./
+
+/ <a href="mailto:soydalto@gmail.com">Enviar Email</a>, con el mail to dentro del atributo href, nos permite hacer un enlace hacia un correo espefico y mandar un email. /
+
+- Tablas
+
+1. Son una forma de organizar datos en filas y columnas, similar a como las hojas de calculo de Excel.
+/ <table></table>, etiqueta para abrir de manera correcta una tabla. /
+
+2. Las tablas se separan en varias etiquetas pero tenemos las 3 importantes que son: 
+! El objetivo es presentar datos tabulares !
+
+<tr>, arma una fila.
+<td>, define celdas para esas filas dentro de un TR.
+<th>, define el encabezado de esas filas dentro de un TR.
+
+! Con el atributo col-span podemos hacer que una celda ocupe mas de 1 espacio !
+
+! Usamos thead, tbody, tfooter para organizar correctamente a nivel seo las tablas !
+
+- Audio y Video 
+
+1. Nos permite reproducir Audio y Video.
+
+/ <video src=""></video>, Permite colocar un video. / 
+/ <video autoplay src=""></video>, reproduce automaticamente el video. /
+
+/ <video controls src=""></video>, brinda un control de audio, pausa, tamaño predeterminado por el navegador. /
+
+/ <video controls autoplay muted src=""></video>, el video se reproduce automaticamente y tiene sus controles y tambien estara en muted. /
+
+/ <video loop src=""></video>, nos permite hacer bucle el video. /
+
+/<video src=""></video>
+ <track>, track nos permite poner subtitulos /
+
+- Lazy Loading
+
+1. Carga diferida, el contenido tiene que ir cargandose hasta que el usuario va llegando a esa seccion, basicamente no se cargar ningun tipo de archivo hasta que el usuario baje y mire la seccion.
+* Atributo loading="lazy" dentro de el video, imagen o audio.
+
+- Etiquetas Obsoletas
+
+1. Nos referimos a etiquetas que ya no se usan de ninguna forma, se vuelve obseletas por el avance y reemplazo de estas por unas mejores.
+x <font> x
+x <blink> x
+x <big> x
+x <strike> x  
+x <tt> x reemplazada por <code>
+x <u> x 
+
+Para mas informacion ir a MDN HTML resource (https://developer.mozilla.org/es/docs/Web/HTML)
+
+
+- HTML SEMANTICO
+1. Significa utilizar etiquetas especificas para dar un significado en concreto.
+2. Mejora la compresion de los motores de busquedad es decir el SEO total.
+
+Etiquetas semanticas:
+/<header></header>, hace referencia a un encabezado de la pagina. /
+
+/<nav></nav>,hace referencia que todo lo que este dentro del nav, sera para navegar. /
+! Pueden haber varios encabezados sin problema en la pagina !
+
+/<section></section<>, hace referencia a una seccion del 
+contenido. / 
+
+/<main></main>, hace referencia a la seccion principal de la pagina. /
+
+/<aside></aside>, hace referencia a la seccion secundaria, esta relacionado con el contenido pero no tanto. / 
+
+/<footer></footer>, hace referencia al contenido que va abajo del todo de la pagina WEB, el pie de pagina. /
+
+- ACCESIBILIDAD WEB:
+1. Se refiere a la creacion web adaptadas para todas las personas sin importar que sean ciegos, daltonicos, sordos, etc.
+
+2. En europa es de ley crear una pagina accesible y nos mejora el SEO totalmente.
+
+3. Una copia del arbol pasa por tecnologias accesibles especialmente para la gente con discapacidad.
+
+Atributos de accesibilidad para a:
+* aria-label="", permite poner una descripcion de ese enlace
+

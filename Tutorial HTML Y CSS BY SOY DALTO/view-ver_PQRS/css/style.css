@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* --- Reset y base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #334155;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Contenedor principal --- */
+.container-custom {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid #e2e8f0;
+    flex: 1;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* --- Header --- */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+h2 {
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 8px;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* --- Tabla personalizada --- */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom thead {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.table-custom thead th {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 16px 12px;
+    text-align: left;
+    border: none;
+    letter-spacing: -0.025em;
+}
+
+.table-custom tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background: #f8fafc;
+}
+
+.table-custom tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table-custom tbody td {
+    padding: 16px 12px;
+    font-size: 14px;
+    color: #374151;
+    vertical-align: middle;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .container-custom {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .table-custom {
+        font-size: 13px;
+    }
+
+    .table-custom thead th,
+    .table-custom tbody td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-custom {
+        font-size: 12px;
+    }
+
+    .table-custom thead th,
+    .table-custom tbody td {
+        padding: 8px 6px;
+    }
+
+    .dt-buttons .btn {
+        margin-bottom: 8px;
+        width: 100%; /* botones a ancho completo en móvil */
+    }
+}
+
+/* --- Vista tipo cards en pantallas muy pequeñas --- */
+@media (max-width: 576px) {
+    .table-custom thead {
+        display: none; /* escondo encabezado */
+    }
+
+    .table-custom, 
+    .table-custom tbody, 
+    .table-custom tr, 
+    .table-custom td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-custom tr {
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .table-custom td {
+        text-align: left;
+        padding: 8px 10px;
+        font-size: 14px;
+        border: none;
+        position: relative;
+    }
+
+    .table-custom td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #0284c7;
+        display: block;
+        margin-bottom: 4px;
+        font-size: 13px;
+    }
+}
+
+/* --- Animaciones --- */
+.container-custom {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

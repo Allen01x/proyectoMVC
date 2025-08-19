@@ -1,0 +1,103 @@
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/* Cuando pasamos el mouse por encima de h1 */
+
+h1:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+/* Cuando le damos click ya sea derecho o izquierdo a ese elmento */
+
+h1:active {
+  color: blue;
+}
+
+/* Seleccionando el primer LI */
+
+li:first-child {
+    color: red;
+}
+
+/* Seleccionando el segundo LI */
+
+li:nth-child(2){
+    color: rgb(116, 102, 102);
+}
+
+/* Seleccionando a un LI si y Un LI NO */
+
+li:nth-child(2n){
+    color: rgb(253, 136, 136);
+}
+
+/* Seleccionado a un type especifico de li */
+
+li:nth-of-type(3) {
+    color: blue;
+}
+
+
+/* Seleccionando el ultimo LI */
+
+li:last-child{
+    color: rgb(59, 33, 33);
+}
+
+/* Seleccionado los LI dentro de la ID lista que no tengo la clase no */
+
+#lista li:not(.no){
+    color: red;
+}
+
+div {
+    border: 2px solid #000;
+}
+
+/* Seleccionando el div en caso de estar vacio */
+
+div:empty{
+ background-color: red;
+ padding: 20px;
+ border: none;
+}
+
+/* Seleccionando el check de un input check box */
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0;
+
+}
+
+/* Seleccionado enlaces no visitados */
+
+a:link {
+    color: red;
+}
+
+/* Seleccionado enlaces visitados */
+
+a:visited {
+    color: green;
+    
+}
+
+/* Seleccionando inputs invalidos */
+
+input:invalid {
+    color: red;
+}
+
+/* Seleccionado inputs validos */
+
+input:valid {
+    color: rgb(168, 42, 42);
+}

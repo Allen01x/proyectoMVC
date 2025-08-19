@@ -1,0 +1,34 @@
+- RESPONSIVE DESING HTML BY SOY DALTO -
+
+- Atributos SRCSET Y SIZES
+
+1. SRC SET o SIZES son 2 atributos que trabajan en conjunto para ofrecer una solucion mas avanzadas y flexible para cargar imagenes responsive, elejir la imagen adecuada segun cierta condicion.
+
+2. Definimos las imagenes alternativas y sus tamaños.
+
+! Mejora el rendimiento y la carga de la pagina !
+
+! Si abrimos una pagina desde el celular tardara mas, hay que aprovechar los recursos y que cargue una imagen mas chiquita. !
+
+! damos la medida en W !
+
+! El navegador elige la resolucion !
+
+2. Sizes da una recomendacion de cual seria el maximo altura con que la imagen puede trabajar, si la pantalla es de ese tamaño se aconseja una imagen de tanto pixeles y si es mayor se usara una de tantos pixeles.
+
+3. Definimos el tipo de tamaño le recomendamos que cargue al navegador segun la resolucion que tenga la pantalla.
+
+! De esta manera podemos cargar imagenes de diferentes resoluciones !
+
+/ "(max-width: 400px) 300px,
+(max-width: 600px) 500px, 1000px", En el ejemplo dice cuando la pantalla sea menor de 400 o igual se carga imagenes masomenos de 300px, cuando tenga menos de 600 o mas, se cargan imagenes de 500px y cuando se carga una de 1000px /
+
+- Etiqueta Picture & Source y atributo Media
+
+1. Picture es una etiqueta que funciona para especificar multiples fuentes para una imagen, adentro habra 1 imagen pero se podra eligir entre varias que le daremos.
+
+2. Source es el recurso que se le dara, en este lo utilizamos con picture.
+
+3. Media es similar a sizes, pero solo carga cuando tenga menos de la resolucion establecida.
+
+! Tiene una respuesta sementica mas adecuada !

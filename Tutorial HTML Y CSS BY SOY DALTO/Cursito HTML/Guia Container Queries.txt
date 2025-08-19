@@ -1,0 +1,19 @@
+- CONTAINER QUERIES - BY SOY DALTO
+
+1. Queries de contenedor, representa un avance en el diseño significativo, ya que podemos tambien podemos agarrar un elemento y volverlo contenedor y segun sus propiedades y darles estilo a los elementos.
+
+/container-type: ;, nos ayuda definir el tipo de contenedor/
+
+/container-type: inline-size;, condicionamos las propiedades que le vamos a dar por su ancho, dimensiones en linea. /
+
+/container-type: size;, se condiciona en sus dimensiones en bloque y en linea /
+
+/container-name: ;,  podemos darle nombre a un contenedor para que no sea aplique a todos si no a algunas especificos./
+
+/@container (max-width: 500px){
+    p {
+        font-size: 20px;
+    }
+}/ estamos midiendo el contenedor.
+
+La magia es que podemos dar condiciones a contenedores.

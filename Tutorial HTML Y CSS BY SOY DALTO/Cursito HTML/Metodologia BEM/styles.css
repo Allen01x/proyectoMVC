@@ -1,0 +1,30 @@
+
+#list_ingredientes {
+
+    font-family: sans-serif;
+    padding: 10px;
+    
+}
+
+#list_ingredientes h1 {
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(85, 85, 48);
+    border: 2px solid rgb(105, 67, 67);
+    
+}
+
+#list_ingredientes .list__item {
+    padding: 10px;
+    color: rgb(95, 66, 77);
+}
+
+#list_ingredientes .item--malo {
+    color: rgb(255, 0, 0);
+}
+
+#list_ingredientes .item--importante {
+    color: #00f;
+}

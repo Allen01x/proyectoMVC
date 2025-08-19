@@ -1,0 +1,17 @@
+/* ID contiene (1 0 0) de especifidad, valor mayor a todos */
+
+#titulo {
+    color: gainsboro;
+}
+
+/* Clase contiene (0 1 0) De especificidad, segundo valor mayor a todos */
+
+.titulo {
+    color: blue;
+}
+
+/* Selector por elemento contiene (0 0 1) de especificidad, el valor mas bajo de todos */
+
+h1 {
+    color: red;
+}

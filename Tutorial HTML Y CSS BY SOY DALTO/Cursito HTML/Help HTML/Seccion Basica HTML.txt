@@ -1,0 +1,74 @@
+
+ / CURSITO HTML BY Soy Dalto /
+ 
+ - ESTRUCTURA PAGINA WEB -
+1. Toda las paginas web tienen una estructura que se incia con la etiqueta HTML:5
+dentro de esta encontramos:
+* <!DOCTYPE html> -> Define la version de HTML, siempre debe de estar al principio.
+* <html></html> -> Define que todo lo que va estar adentro sera la pagina WEB.
+* <head></head> -> Informacion de la pagina que no podemos observar.
+* <title></title> -> Define el titulo de la pestaña de la pagina.
+* <body></body> -> Define toda la informacion visible en la WEB.
+
+ - INTRODUCCION HTML -
+
+- Etiqueta para Parrafos y Encabezados:
+* <p></p> -> Etiqueta para describir parrafos, siempre tiene una idea y punto especifico.
+* <h1></h1> -> Etiqueta para los encabezados (titulo de la pagina)
+! Encontramos 6 titulos disponibles para usar (Entre mas sea el numero, mas chiquito sera) !
+! Por cuestiones de SEO, usaremos solo un H1 en toda la pagina, no mas !
+! Podemos usar todos los h2 hacia adelante que queramos (con su respectivo uso) !
+
+- Etiquetas para Listas:
+1. Tenemos dos tipos de listas; Ordenadas y Desordenadas 
+! OL = Order List UL, UL = Unordered List !
+* <ol></ol> -> Para listas ordenadas (Enumeradas de 1)
+* <ul></ul> -> Para listas desorganizadas (Con puntos)
+! Estas listas tiene mini elementos !
+* <li></li> -> Elementos de una lista.
+
+- Etiqueta Enlaces:
+1. Tambien llamado HyperVinculos o ancla, direccionan a un sitio deseado.
+* <a></a> -> Etiqueta para hipervincular.
+Atributos de etiqueta  <a></a>:
+/ href=" " -> Para darle una funcion de link al elemento /
+/ target="_blank" -> Para abrir en enlace en una nueva pestaña /
+/ title=" " -> Brindar informacion extra al pasar el cursor /
+! Se recomienda poner htpps para buen SEO y seguridad !
+! Podemos redireccionarnos entre paginas WEB !
+! Importante que cada elemento se puede diferenciar entre si !
+
+
+- Etiqueta Imagenes:
+* <img> -> Para poner una imagen.
+Atributos de etiqueta <img>:
+/ src="" -> Para poner la ruta de la imagen /
+/ alt="" -> Para escribir un texto alternativo en caso de lo que la imagen no cargue por x o y razon /
+! No necesitamos cerrar la etiqueta !
+
+- Rutas absolutas y Rutas relativas:
+1. Las rutas absolutas son aquellas que siempre estaran alli sin importar.
+2. Las rutas relativas depende de su ubicacion para poder acceder.
+! Usamos el ../ para salir de una ruta carpeta !
+! Para abrir enlaces dentro de carpetas primero ponemos el nombre y luego el simoblo / y asi sucesivamente !
+
+- Etiquetas para formularios:
+1. Tipo de datos que se le piden al usuario
+* <form></form> -> Etiqueta de bloque para construir un formulario.
+* <input> -> Etiqueta para dar un dato.
+Atributos input:
+/ type= "" -> Configurar el tipo de dato input /
+/ required -> Obliga al usuario a completar el input /
+/ name= "" -> Identificacion para los Inputs /
+/ placeholder="" -> Nos pone un texto como referencia /
+
+- Etiqueta strong:
+1. Sirve para resaltar a nivel semanticos frases o palabras en nuestro Sitio WEB.
+
+- Etiquetas de Bloque vs Etiquetas de Linea:
+1. Etiquetas de 
+
+
+
+
+ 

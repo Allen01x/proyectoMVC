@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../CSS/Bordes/img/aloneman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+
+    
+}
+
+.box {
+   
+    width: 280px;
+    text-align: center;
+    background-color: #ffaa;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0px 40px 5px rgba(255, 255, 255, 0.467);
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+H1 {
+   
+    font-size: 20px;
+    text-align: center;
+    color: #444;
+    text-shadow: 0 0 30px red;
+}
+
+p{
+    
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    background-color: #b06666;
+    width: 40%;
+    padding: 8px;
+    margin: auto;
+    text-shadow: 0 0 4px #f88;
+}
+
+button{
+    color: #122c;
+    margin-top: 10px;
+    background: #fffb;
+    border-style: none;
+    border-bottom: 5px solid #000000cc;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+img {
+    width: 160px;
+    
+    margin: auto;
+    filter: drop-shadow(0px 0px 3px #000);
+
+}

@@ -1,0 +1,11 @@
+- CREANDO UNA PAGINA WEB DESDE 0 -
+
+Pasos:
+
+1. Iniciar con la seccion del header ,
+
+2. Creacion del menu.
+
+3. Creacion del perfil.
+
+

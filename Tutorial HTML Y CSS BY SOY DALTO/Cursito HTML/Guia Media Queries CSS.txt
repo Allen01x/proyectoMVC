@@ -1,0 +1,24 @@
+- MEDIA QUERIES BY SOY DALTO - 
+
+1. Herramientas que tiene el objetivo de adaptar nuestra pagina web a diferentes resoluciones definimos estilos distintos segun la resolucion.
+
+2. Usar logica de condicion si, entonces.
+
+/@media print, aplicar los estilos solo a los medios print de impresion/
+
+/@media screen, aplicarse a las pantallas./
+
+! Para usar mas condiciones usamos el AND que conecta otra condicion. !
+
+
+- Ejercicio Holy Grail Con Flexbox
+
+1. Holy Grail se compone de 3 etapas, la principal es un menu de navegacion el header, despues la seccion principal la que tenemos un main content y dos columnas un meno lateral o una seccion de interes y abajo de todo tenemos el footer.
+
+! Este diseño aplica para casi todo !
+
+- Mobile First
+
+1. Es una forma de pensar el desarollo de paginas web, en donde primero creamos una web adaptada a moviles y de moviles la adatpamos a resoluciones mas grandes.
+
+2. Primero en mobiles y luego en dispositivos mas grandes.

@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+
+div, body{
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video{
+   
+    max-width: 100%;
+    
+}

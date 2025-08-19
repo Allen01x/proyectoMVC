@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+@supports (display: grid){
+    body {
+        display: grid;
+    }
+}
+
+@supports not (display: grid){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,22 @@
+body{
+    background: #333;
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+details{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    
+}
+
+
+summary{
+    background-color: transparent;
+    
+    padding: 8px;
+}
+
+ul{
+    font-weight: 100;
+}

@@ -1,0 +1,141 @@
+- GRID BASICS - BY SOY DALTO
+
+1. En vez de elijir una sola direccion, se hace distinto, la grilla trabajara tanto horizontal como una columna y verticalmente como si fuera una fila, en grid no tenemos una sola direccion, tenemos 2 y nos permite trabajar con filas y columnas, podemos eligir ambas.
+
+2. Supera las limitaciones que no se podian hacer, supera la barrera en trabajar en 1 sola dimension y ahora podemos trajar con 2 dimensiones.
+
+- CONOCIMIENTO DE GRID -
+
+Grid Container: elemento padre que se define como un contenedor cuadricula, este elemento puede tener varios hijos que son los Grid Item, cada uno de estos puede ocupar 1 o mas celda en la cuadricula, luego tenemos la lineas que se definen como los bordes de la cuadricula para separar las filas y columnas.
+
+
+- Creando un GRID -
+
+1. Cuando un elemento se convierte en una grilla si no definimos nada y solo que sera un grid cada hijo pasa a ser una fila implicita. 
+
+2. En grid no hay margin collap, no se colapsa el margin.
+
+/display: grid;, para definirlo en grilla al elemento padre/
+
+/grid-template-columns: ;, definir lo que va medir cada una de las columnas/
+
+/grid-template-rows: 100px 100px;, definir la medida de la primer fila. /
+
+- Unidades Auto y FR-
+
+1. Las unidades auto se estiran completamente para ocupar todo el ancho disponible.
+
+2. si hay 2 medida auto, se reparte y calcula el min-content, el espacio que sobra lo distribuya entre las cajas.
+
+3. FR ocupa todo el ancho disponible, pero si le damos 1fr a cada uno, no le importa el contenido, lo divide exactamente igual, el ancho sobrante no tiene en cuenta el contenido, no le resta el min-content, lo aplica del witdh total.
+
+- Repeat y MinMax
+
+1. Repeat evitar repetir la misma expresion, nos remplaza todo el codigo de fr y auto, evita estar repitiendo el codigo.
+
+2. MinMax es darle un minimo o maximo a una columna, toda la columna va tener un minimo de algo y maximo de algo.
+
+/minmax(300px, 500px);, no se encoje mas si llega a 300px, y cuando mida 500px no se va agrandar mas de 500px, es como un min-width y max-width/
+
+- Explicit & Implicit Grid
+
+1. Grid Explicito: le decimos al navegador cuales son las celdas y tamaños, ya explicitamente lo definimos.
+
+2. Grid Implicito: Si creemos elementos que no se han definido en la grilla, nos van a crear nuevas filas, por defecto que se adapte al total del contenido de la grilla.
+
+! Para definir esto usamos la propiedad grid-auto-rows: !
+
+/grid-auto-rows: 200px; Todas las filas que se creen automaticamente tendrán 200px./
+
+- Grid Gap
+
+1. El margin no tenemos la misma separacion total, y es un asco, utilizamos la propiedad gap.
+
+/column-gap: 10px;, separa las columnas 10px/.
+/row-gap: 20px;, separa las filas 10px/.
+/gap: 20px, forma abreviada, da 20px a las filas y columnas/.
+
+! La forma correcta de hacer separacion de elementos !
+
+- GRID Dinámico (y RESPONSIVE)
+
+1. Grid Estatico: Siempre sin importar lo que nosotros digamos, no se va a poder adaptar de diferentes tamaños y medidas, como maximo darles un grid auto y asi agregando nuevas columnas, pero esto no es dinámico.
+
+- Auto Fit y Auto-Fill
+
+1. Auto Fit, hace un auto ajuste, se van adaptando como un wrap.
+
+2. Auto Fill, hace un auto relleno.
+
+! Auto fill y Auto Fit, funcionan igual, no hay diferencia. !
+
+! Cuando hay pocos elementos auto fill crea columnas aunque no haya elementos al contrario de auto-fit que solo las va a ir adaptando. !
+
+- Grid Column & Grid Row:
+
+Nos permite 
+
+
+- Grid FLOW: Dense  
+
+1. Los rellena con los elementos siguientes, no le importa el orden, si hay huecos vacios, relleno esos huecos.
+
+! Lo columna que crea es en min-content !
+
+- Grid Areas
+
+1. Nos permite una forma de crear un layout teorico donde le decimos al navegador en cuantas filas queremos separar cada fila. asignar un elemento a un area especifica que le dimos en grid.
+
+/grid-template-areas:
+"header header header"
+"nav main aside"
+"footer footer footer"/
+
+
+- Alineacion con grid
+
+1. Alineacion en el eje horizontal y vertical, no nos preocupamos por la direccion del main axis ni eso, alineamos en ambos ejes.
+
+* Alinear en el eje horizontal los items dentro la celda:
+
+/justify-items: stretch;, para poder alinear los items de grid en el eje horizontal
+
+start: lo pone a la direccion del texto al inicio
+
+end: cambia la direccion de los elementos, se da vuelta.
+
+self-start: tiene en cuenta la direccion de los hijos, el start tiene la direccion del contenedor.
+
+self-end: tiene en cuenta la direccion de los items, el end tiene la direccion del contenedor.
+
+right: siempre los alinea a la derecha el contenido.
+
+left: siempre los alinea a la izqueirda el contenido.
+
+stretch: Se estira completamente.
+
+Baseline: se pone sobre la linea del texto.
+
+first-baseline: se pone sobre la primer linea del texto./
+
+/justify-self, cambiar la direccion del mismo elemento, osea solo hacia el mismo/
+
+
+* Mover la celda completa:
+
+1. Usamos justify-content para mover la celda de los elementos.
+
+
+* Mover los item de manera vertical 
+
+/align-items/
+
+* Mover la celda de manera vertical
+
+/align-content/
+
+
+- SubGrid
+
+1. Una forma de que los hijo de un grid item, formen parte de la grilla principal.
+

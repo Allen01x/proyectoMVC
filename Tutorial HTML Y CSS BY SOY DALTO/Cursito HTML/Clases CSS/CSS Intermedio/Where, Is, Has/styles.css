@@ -1,0 +1,29 @@
+
+/* Modificando los elementos 11 14 y 17 que estan dentro de algun section */
+section :is(.element11,.element14,.element17){
+    color: grey;
+}
+
+
+/* En caso de que el section tenga un elemento 11, se le dara un fondo */
+
+section:has(.element11) {
+    border: 1px solid black;
+}
+
+label {
+    padding: 20px;
+}
+
+/* Si el label tiene un input valido se le dara un color verde claro */
+
+label:has(input:valid){
+    color: rgb(30, 255, 0);
+}
+
+/* Si el label tiene un input invalido se le dara un color rojizo */
+
+label:has(input:invalid){
+    color: red;
+    font-family: sans-serif;
+}

@@ -1,0 +1,35 @@
+- RESPONSIVE DESIGN BY SOY DALTO-
+
+- BLOQUES FLEXIBLES
+
+
+! Para que el contenido tenga la resolucion que queremos podemos utilizar el max-width o min-width !
+
+/max-width: darle un maximo para que se estire/
+
+/min-width: se encoje hasta un minimo/
+
+! El problema de definir un height fijo es que el contenido se desvorda, es mejor utiliza la propiedad min-height para que el contenido se adapte.!
+
+! Si queremos que los elementos se adapten usamos la papi flex box !
+
+- Flexible Multimedia
+
+1. Construir imagenes y videos FLEXIBLES, son aquellas que se adaptan a la resolucion que se encuentran.
+
+- IMAGENES -
+
+2. Una forma estandar y recomendada es con un max-width al 100% y un height auto.
+
+! Crecer un 100% de una pantalla que sea mayor a el, pero cuando alcanza el tamaño original, no va ir creciendo. !
+
+! Si solo le damos un width: va ir creciendo y ocupa todo. !
+
+- VIDEO -
+
+1. Los videos se comparta de forma diferente, estos no ajustan su altura automaticamente para una relacion de aspecto.
+
+! La tecnica para no romper los videos a la hora de ajustar a las resoluciones, se usa la propiedad aspect ratio !
+
+aspect-ratio
+

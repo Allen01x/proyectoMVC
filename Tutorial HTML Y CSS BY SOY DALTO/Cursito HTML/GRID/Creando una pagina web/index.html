@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Creating Web Page</title>
+  </head>
+  <body>
+    <!-- Iniciamos con seccion del header -->
+    <header class="header">
+      <!-- Creamos un input y label para cuando lo pulsemos ae abrá el menu -->
+      <input type="checkbox" class="header__checkbox" id="open-menu" />
+      <label for="open-menu" class="header__open-nav-button" role="button"
+        >=</label
+      >
+      <div class="header__logo-container">
+        <img src="logo.jpg" alt="" class="header_logo" />
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#">Home</a></li>
+          <li class="header__nav-item"><a href="#">About</a></li>
+          <li class="header__nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="profile">
+      <div class="profile__wrapper">
+        <div class="profile__img-container">
+          <img
+            src="profesionales-de-la-salud--2346234821.jpg"
+            alt=""
+            class="profile__img"
+          />
+        </div>
+        <div class="profile__data-container">
+          <div class="profile__data">
+            <div class="profile__description">
+              <h1>¿Que es S.A.B?</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                accusamus. Quisquam nesciunt consequuntur nemo alias dolorem,
+                enim nihil voluptate quod, vitae corrupti reprehenderit
+                obcaecati? Debitis velit cumque culpa porro possimus.
+              </p>
+            </div>
+            <div class="profile__skills-container">
+              <h2>SKILLS</h2>
+              <ul>
+                <li class="profile__skill">
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--10">10%</div>
+                  </div>
+                  <span class="profile__skill-name">PHYTON</span>
+                </li>
+
+                <li class="profile__skill">
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--80">80%</div>
+                  </div>
+                  <span class="profile__skill-name">CSS</span>
+                </li>
+                <li class="profile__skill">
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--50">50%</div>
+                  </div>
+                  <span class="profile__skill-name">HTML</span>
+                </li>
+                <li class="profile__skill">
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--23">23%</div>
+                  </div>
+                  <span class="profile__skill-name">C++</span>
+                </li>
+                <li class="profile__skill">
+                  <div class="load-bar">
+                    <div class="load-bar__bar bar--13">13%</div>
+                  </div>
+                  <span class="profile__skill-name">RUBY</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="portafolio">
+      <h2 class="portafolio__title">PORTAFOLIO SECTION</h2>
+      <div class="portafolio__project-container">
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+        <div class="portafolio__project">
+          <h2>PROJECT</h2>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <h2 class="form_title">Contact</h2>
+      <form class="form__form">
+        <div class="form__input-container">
+          <label>Nombre
+            <input type="text" placeholder="Nombres">
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label>Apellido
+            <input type="text" placeholder="Apellidos">
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label>Email
+            <input type="email" placeholder="Email:">
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label>Mensaje
+            <textarea placeholder="¿Motivo de su queja?"></textarea>
+          </label>
+        </div>
+        <div class="form__input-container">
+          <label>Enviar
+            <input type="submit">
+          </label>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <strong>SEXO - COPYRIGHT BY ZATTW</strong>
+    </footer>
+  </body>
+</html>

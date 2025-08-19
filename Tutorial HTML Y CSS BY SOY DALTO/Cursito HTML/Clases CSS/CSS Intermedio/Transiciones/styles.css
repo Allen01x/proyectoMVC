@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    transition: color 1s 1s;
+}
+
+:hover h1{
+    color: #f70303;
+}
+
+.box__test{
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    background-color: #ff0000;
+    border: 1px solid rgb(0, 0, 0);
+    transition: left 1s, margin 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in;
+    text-align: center;
+    position: relative;
+    left: 0;
+}
+
+body:hover .box__test {
+
+    left: 400px;
+    margin-top: 50px;
+    
+}
+
+body .box__test a {
+    color: #000;
+    text-decoration: none;
+    transition-property: text-decoration;
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+}
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <!-- Container TO SET MAX WIDTH OF THE PAGE-->
+    <div class="container">
+
+        <!--HEADER SECTION-->
+        <header>
+            <div class="home-logo">
+                <img src="brand-logo.png" alt="">
+                <span class="logo">SALUD BENEFIT</span>
+            </div>
+            <div class="nav-header">
+                <nav>
+                    <ul>
+                        <ol>
+                            <a href="#header-sab">🌐
+
+                                Inicio</a>
+
+                            <a href="#services-sab">💬
+                                Servicios</a>
+
+                            <a href="#tratamientos-sab">🦷
+                                Tratamientos</a>
+
+
+                        </ol>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="user-info" >
+                <span class="who_user">Paciente</span>
+
+                <img src="view-profile.png" alt="">
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle"><img src="settings-icon-10.png" alt=""></button>
+                    <div class="dropdown-menu">
+                        <a href="#">Perfil</a>
+                        <a href="#">Historial Clinica</a>
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </header>
+
+        <!-- MAIN SECTION-->
+        <main>
+            <!-- FIRST SECTION ABOUT US-->
+            <div class="about-us" id="header-sab">
+                <div class="cover-about-us">
+                    <img src="profesionales-de-la-salud--2346234821.jpg" alt="">
+                    <div class="info-about-us">
+                        <div class="title-about-us">
+                            <h1>Sobre Nosotros</h1>
+                            <p>Somos Salud Benefit (SAB), una institución prestadora de servicios de salud comprometida
+                                con ofrecer atención integral, humanizada y de calidad. Trabajamos con un equipo
+                                multidisciplinario para mejorar la salud y bienestar de nuestros usuarios, brindando
+                                soluciones efectivas, accesibles y seguras que fortalecen la confianza y la satisfacción
+                                de la comunidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION SERVICES -->
+
+            <div class="info-1" id="services-sab">
+                <div class="info-1-title">
+                    <h1>Nuestro Servicios</h1>
+                </div>
+
+                <div class="cover-info-card">
+                    <div class="info-card">
+                        <h1>Citas</h1>
+                        <img src="calendar-appointment-on-the-wall-line-icon-style-date-sign-event-pictogram-agenda-reminder-monthly-schedule-time-planner-business-concept-illustration-design-on-white-background-eps-10-vector-removebg.png"
+                            alt="">
+                        <p>Agenda tu cita de manera fácil y rápida, elige el horario disponible que más te convenga y
+                            asegura tu atención a tiempo</p>
+                        <a href="#">Agendar Cita</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h1>PQR's</h1>
+                        <img src="person-asking-question-icon-black-line-art-logo-vector-removebg-preview.png" alt="">
+                        <p>Envía fácilmente tus peticiones, quejas, reclamos o sugerencias y haz seguimiento a cada una para recibir respuesta oportuna</p>
+                        <a href="#">Registrar PQR</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <!-- SECTION TRATAMIENTOS-->
+
+                <div class="info-1 info-2" id="tratamientos-sab" >
+                <div class="info-1-title info-2-title">
+                 <h1>Tratamientos Disponibles</h1>
+                </div>
+
+                <div class="cover-info-card cover-info-card-2">
+                    <div class="first-tratamiento">
+                        <img src="ortodoncia.webp" alt="">
+                        <h2>Ortodoncia</h2>
+                        <p>Corrige la posición de tus dientes con nuestros brackets estéticos.</p>
+                        <span>Desde $2'500.000</span>
+                        <a href="">Cotizar</a>
+                    </div>
+
+                      <div class="first-tratamiento">
+                        <img src="implanteDental.webp" alt="">
+                        <h2>Implantes Dentales</h2>
+                        <p>Solución permanente para dientes perdidos con tecnología de última generación.</p>
+                        <span>Desde $1'800.000</span>
+                        <a href="">Cotizar</a>
+                    </div>
+
+                     <div class="first-tratamiento">
+                        <img src="blanqueamiento.webp" alt="">
+                        <h2>Blanqueamiento Dental</h2>
+                        <p>Eliminar manchas para lograr una sonrisa más blanca y brillante</p>
+                        <span>Desde $800.000</span>
+                          <a href="">Cotizar</a>
+                    </div>
+                      
+                    </div>
+
+
+                </div>
+            </div>
+
+            
+
+            
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+    </div>
+    </main>
+    </div>
+
+
+    <script>
+        const toggle = document.querySelector('.dropdown-toggle');
+        const menu = document.querySelector('.dropdown-menu');
+
+        toggle.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.dropdown')) {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+
+
+
+
+</html>

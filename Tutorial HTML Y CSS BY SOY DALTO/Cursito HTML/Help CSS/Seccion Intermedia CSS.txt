@@ -1,0 +1,274 @@
+- SECCION INTERMEDIA CSS BY SOY DALTO -
+
+- Selectores Avanzados
+1. CSS funciona a traves de agarras elementos y dar propiedades, pero podemos verlo de otra forma, en css hay 2 cosas, la primera es darle estilo a un elemento, la otra parte es en saber seleccionar los elementos.
+
+Selector por atributos:
+* Despues de seleccionar la etiqueta ponemos [] para seleccionar el atributo con su respectivo contenido.
+! Para las etiquetas IMG que queramos seleccionar terminen con PNG JPG etc. utilizamos este simbolo $ (terminan con) despues del atributo src !
+! Para la etiquetas IMG que queramos seleccionar que empiencen con algun nombre usamos el ^ despues del src y el nombre de eso que arranca!
+
+Selectores descendientes:
+* Usamos el > para seleccionar un elemento hijo de un elemento padre y debe estar si o si dentro del elemento padre y no dentro de otros.
+! Para poner comentarios usamos /* */ para hacerlos. !
+
+Selector Adyacente:
+* Usamos + para darle estilos a un elemento que viene despues al instante.
+
+Selector General:
+* Usamos  para seleccionar a todos los demas hermanos que sigan.
+
+
+- Herencia
+
+1. Habla de que algunas propiedades pueden hederarse y otras no, busca elementos superiores que tenga esa propiedad definida. podemos modificar como funciona el comportamiento de hederencia.
+
+2. Usamos el atributo inherit para heredar una propiedad.
+/ color: inherit; heredar propiedad superior/
+
+3. Si no queremos herederar una propiedad usamos el atributo initial.
+/ color: initial; el valor inicial por defecto se hereda /
+
+3. Los elementos en bloque tienen un width predeterminado de l00% de la pagina.
+
+- Cascada y Especificidad
+
+1. La especificidad y cascada es la puntuacion del estilo, al sobreescribir una propiedad de CSS. 
+
+2. Las cascada es el orden de las propiedades y si importa, si dos reglas tienen la misma especificidad, se determinara el estilo por el orden.
+
+3. Si la especificidad es igual (0 0 1) el valor que quedara, es la ultima que se aplique, se va sobreescribiendo.
+
+! El valor que menos importa es el 3 !
+
+! El que mas importa es el 1 y el segundo que mas importa es el segundo valor !
+
+! Css le da mas proridad a los elementos mas especificos ya sea por clase o id !
+
+Valores segun lo alto de su especificidad:
+1. !IMPORTANT /REGLA SUPREMA/
+2. atributo style en html.
+3. etiqueta style en html.
+4. CSS propiedades del desarollador.
+5. Configuracion usuario definido.
+6. Navegador.
+
+- pseudo-clases
+1. Nos permite seleccionar un estado especifico de un elemento, palabra claves para modificar ese elemento al estar en este estado.
+
+Atributos de Pseudo-clases
+* :hover, las mas comun de todas, selecciona cuando este el cursor encima de ese elemento.
+
+* :active, cuando damos click al elemento.
+
+* :first-child, Selecciona unicamente al primero.
+
+* :last-child, Selecciona unicamente al ultimo elemento.
+
+* :nth-child(), Selecciona a un elemento especifico sea el 2 o el anteultimo.
+! Si ponemos (2n o otro valor con n), se estara modificado 1 valor despues de ese, por ejemplo, 1 si, 1 no. !
+
+* :nth-last-of-type, Seleccionado solo el tipo del elemento.
+
+* :not, no selecciona un elemento que tenga una clase o id.
+
+* :empty, selecciona elementos vacios, que no contienen absolutamente nada.
+
+* :root, Selecciona al elemento raiz.
+
+* :checked, en caso de estar checkeado darle click.
+
+* :link, para modificar propiedad de un link que no ha sido vistiado.
+
+* :visited, para modificar propiedad de un link que ya fue visitado.
+
+- Pseudo-Clases nuevas IS, WHERE Y HAS
+IS: Agrupa elementos, nos abrevia y agiliza el proceso, cambia la especifidad.
+WHERE: Agrupa elementos, pero no cambia la especificidad.
+HAS: Si tiene el elemento, se le dara la propiedad.
+
+- Pseudo-Elementos
+1. Se representa con ::
+
+pseudo-elementos:
+* ::first-letter, cambiar la primera letra del elemento.
+
+* ::first-line, cambia la primera linea del contenido.
+
+* ::selection, cambia las propiedades cuando se seleccione un elemento.
+
+* ::placeholder, modifica el placeholder de los inputs.
+
+* ::marker, modifica el punto de las li.
+
+* ::before, añade un texto que no se puede modificar, ni seleccionar, aparece antes del contenido.
+
+
+* ::after, añade un texto que no se puede modificar, ni seleccionar, aparece despues del contenido.
+
+
+// Usos de Display //
+
+- Propiedad Display valor Block:
+
+1. Convierte un elemento de linea en bloque, hace que ocupe todo el ancho disponible y comienza una nueva linea.
+
+! Los elementos en bloque aceptan margins, padding, !
+
+- Propiedad Display valor Inline:
+
+1. Convierte un elemento de Bloque en Linea.
+
+! Los elementos en linea como a no aceptan ni permiten los margin o padding !
+
+! No permiten modificar el ancho y el alto, se la suda !
+
+! Los margenes de los elementos en linea y padding solo funcionan de forma horizontal.
+
+- Propiedad Display valor Inline_Block:
+
+1. Es una mezcla entre inline y block, funciona exactamente igual que los elementos en bloque solo que ahora podemos apilarlos, no ocupan todo el ancho disponible ni tampoco inicia una nueva linea.
+
+! Podemos trabajar con elementos en bloque unidos !
+
+! Acepta todo margins, paddings, solo que no inicia una nueva linea !
+
+! El contenido que ocupa es el tamaño que tiene adentro !
+
+- Propiedad Display valor none
+
+! El valor none no ocupa espacio en la pagina, no se representa visualmente, no funciona para nada !
+
+// Usos de Position //
+
+Posicionar un elemento es crear un contexto de apilamiento, tridemensionar el HTML para separar elementos por capas.
+
+- Propiedad Position valor Relative:
+
+1. Se usa para mantener la posicion original en la pagina pero si quiero puedo moverlo hacia arriba hacia abajo o hacia los costados.
+
+! Para mover las cajas usamos las propiedades siguientes:
+
+right: Mover solamente a la derecha.
+
+left: Mover solamente a la izquierda ! Tiene Propiridad sobre Right !
+
+top: Mover hacia abajo. ! Tiene prioridad sobre bottom !
+
+bottom: Mover de abajo hacia arriba.
+!
+
+! Las cajas se van poniendo una delante de la otra !
+
+
+- Propiedad Position Valor Absolute:
+
+1. Hace que no ocupe lugar en la pagina la caja, sus posiciones son absolutas, el punto de referencia que va a tener es la etiqueta HTML.
+
+! Una caja absoluta tiene a su punto de referencia relativo que es el elemento raiz si no se define. !
+
+- Propiedad Position Fixed & Sticky
+
+1. La posicion fixed se elimina el espacio.
+
+! Siempre se va a posicionar respecto a la ventana !
+
+! Cuando hacemos scroll la caja siempre quedara fija !
+
+// Propiedad Z INDEX //
+
+- Propiedad Z INDEX: 
+
+1. Nos permite mover el eje Z de la capa de la caja.
+
+! Entre mas grande sea el valor mas se pondra por delante la capa de la caja !
+
+! Se recomienda usar valor de 10 en 10 para el z-index!
+
+! eL z-index solo sirve cuando tenemos posicionados los elementos !
+
+- Modal Windows (Ventanas Modal):
+
+! Usamos el elemento dialog en HTML nos ahorra el proceso de poner la posicion en absolute y tambien nos brinda la etiqueta perfecta par alas ventanas modales !
+
+
+- Transiciones 
+
+1. Es un intervalo de cambio de una propiedad de un valor a otro.
+
+2. Brindar un espacio de tiempo para llegar a un estado a otro.
+
+/ transition-property:,
+/ transition-duration:,
+/ transition-delay:, 
+
+! Cubic Bezier controla el movimiento !
+
+/ transition:, Es un shorthand que abrevia transition property, transition duration, transition timing function 
+
+- OverFlow desbordamiento
+
+1. Determina como se maneja el contenido que sobresale de contenedor.
+
+Define el control de flujo de imagenes, cajas, videos, todo.
+
+/overflow: propiedad inicial/
+
+/overflow: visible, valor visible lo que se desborde de la caja sera visible/
+
+/overflow: hidden;, valor no visible, no vera nada de lo que se desborde de la caja/
+
+/overflow: clip;, casi igual al hidden, pero no reserva espacio/
+
+/overflow-x o overflow-y:, valor que afectara ya sea al eje x o y del desbordamiento/
+
+/overflow: auto;, el mejor valor para poner, se ajusta automaticamente al desbordamiento/
+
+
+- Definir flujo de Texto TEXTO FLOW CONTROL -
+
+
+/white-space:, propiedad inicial, espacios en blanco/
+
+/white-space: nowrap;, valor que define que no habra espacios en blanco, no habra salto de linea/
+
+/white-space: pre;, valor que detecta como el desarollador realizo el HTML y lo ajusta de tal manera, no le importa si se desborda/
+
+/white-space: pre-rap;, valor que respecta el desbordamiento y se ajusta a tal manera del codigo HTML/
+
+- Object FIT y Object Position
+
+1. Nos permite determinar como se compartara el contenido de un elemento video o imagen, dandonos el ancho y el alto de estos.
+
+/object-fit: ; 
+
+/object-fit: contain; propiedad valor contain, hacer que la imagen entre por lo menos 1 vez en la resolucion que se le definio./
+
+/object-fit: cover; propiedad valor cover, se adapta y se cubre en todos lados/
+
+/object-fit: none;, propiedad valor none, si no le damos medidas la resolucion sera de 1000x1000/
+
+/object-fit: scale-down;, propiedadvalor scale-down, se quedara con el valor mas bajo que tengamos ya sea el predeterminado 1000x1000 o el que designemos/
+
+/object-position: ;, propiedad para cambiar la posicion en como se vera la imagen o el video, top,right,left,buttom/
+
+- Contorno Outline
+
+1. En el modelo de caja tenemos el contenido despues el paddling luego los bordes y luego los margins, pero entre los border y margins hay una propiedad llamada outline.
+
+2. Es solo una utilidad visual, no ocupa espacio.
+
+3. Es bueno para transiciones y cambios de estado y mostrar al usuario que esta en un elemento.
+
+/ outline: ;, propiedad general de contorno /
+
+/outline-width: ;, valor width, determina el ancho del contorno./
+
+/outline-color: ;, valor color, determina el color del contorno./
+
+/outline-style: ;, valor style, determina el estilo que tendra ese contorno si es solid, dashed, double etc../
+
+/outline-offset: ;, valor offset, determina el separado que tendra el contorno del elemento./
+
+
+! para sacar el efecto predeterminado outline de un input, la manera de correcto para la accesibilidad es poner el :focus-visible y luego outline:none !

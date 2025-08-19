@@ -1,0 +1,69 @@
+
+- Repaso de transiciones -
+
+/transition: width 2s linear; para dar una transition de 2 segundos al width, de esta manera sera linear/
+
+/podemos usar active o hover para dar un tipo de animacion o transicion en donde sea mas lenta o rapida segun se de click o se pase el mouse/
+
+
+- ANIMACIONES BY SOY DALTO -
+
+Una animacion es un proceso que quiere generar una ilucion de movimiento. 
+
+! Mejora el feedback !
+
+! Las transiciones basicamente nos permite cambiar entre estados, una animacion al contrario se ejecuta varias cosas en el medio, se puede cambiar mas cosas !
+
+
+1. Para agregar una animacion/es usamos @keyframes y seguido el nombre de la animacion:
+
+/from {
+        
+    }, es todo lo que tendra el elemento cuando inicie /
+
+/to {
+        
+    }, es todo loque tendra el elemento cuando finalize /
+
+2. Para llamar adentro de un contenedor, elemento a la animacion se usa /animation-name: ;/ acto seguido usamos animation-duration para el tiempo que se tardara en ejecutarlá.
+
+3. Si queremos que la animacion dure aun mas que duration, usamos animation-delay, cuanto tardara en empezar.
+
+4. Para que quede en ese estado y no se revierta, se quede lleno, usamos animation-fill-mode, como vamos a rellenar la propiedad:
+backwards: Se quedara como estaba antes de iniciar la animacion.
+forwards: 
+none: Es como si backwards se pusiera.
+Both: Se queda y no cambia, arranca desde el inicio con la animacion.
+Forwards: arranca con las propiedades y tarda la animacion y despues cambia su propiedad.
+
+5. Al poner valores negativos en la duracion del delay, pasar que la animacion ya se efectuara ese -1s o mas y empienza asi.
+
+6. Si queremos que la animacion se repita mas de 1 vez utilizamos animation-iteration-count: ;, para ver cuantas veces la repetimos:
+infinite: la repite siempre.
+
+7. para cambiar la direccion de la animacion usamos la porpiedad animation-direction:
+reverse: atras pa delante:
+alternate: arranca y se devuelve.
+alternate-reverse: arranca del final y vuelve para atras.
+
+
+- Botones con ANIMADOS
+
+
+
+- Efecto TypeWriter
+
+
+
+- Animaciones basadas en SCROLL
+
+Normalmente tenemos una linea de tiempo basada en la duracion, si esta dura 2 segundos va durar eso y la curva de progesion es lineal o exponencial o lo que sea, eso lo podemos definir con time-funtion.
+
+el time line es a traves del scroll.
+
+
+
+
+- Rango de Animaciones 
+
+animation-range: arranca un poco despues, 

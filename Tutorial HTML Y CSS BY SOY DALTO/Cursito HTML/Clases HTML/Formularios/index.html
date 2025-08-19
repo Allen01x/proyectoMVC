@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TextArea</title>
+</head>
+<body>
+
+   
+    <!-- SIMPE INPUTS -->
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+        <h2>Formulario Contacto</h2>
+
+        <div class="form_input">
+            <label for="nombre">Nombre
+            <input type="text" placeholder="John Doe" id="nombre">
+        </label>
+        </div>
+
+        <!-- SELECT y OPTION -->
+        <div class="form_input">
+            <label> ¿Que servicio Necesita?
+            <select aria-label="seleccione el servicio que necesita entre 3 opciones ">
+                <option>Panaderia</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+
+            </select>
+        </label>
+    </fieldset>
+        </div>
+
+        <!-- DATALIST y OPTION -->
+        <fieldset>
+            <legend>Contact Info</legend>
+        <div class="form_input">
+            <label >Referente
+            <input list="referente" aria-label="Escriba quien lo invito a esta pagina web, si nadie lo invito, escriba nadie">
+            
+            <datalist id="referente" >
+                <option>Una Empresa</option>
+                <option>Un amigo</option>
+                <option>Una puta</option>
+
+            
+        </datalist>
+        </label>
+        </div>
+
+        <div class="form_input">
+            <label>Correo
+            <input type="email" placeholder="ejemplo@gmail.com" aria-label="Escriba su direccion de correo electronico correctamente.">
+        </label>
+    </fieldset>
+        </div>
+    
+        <!-- TEXTAREA -->
+        <fieldset>
+            <legend>Message</legend>
+        <div class="form_input">
+            <label>Diga su mensaje
+            <textarea   aria-label="Escriba su respectivo mensaje" placeholder="Opinion/Valoracion" ></textarea>
+        </label>
+    </fieldset>
+        </div>
+  
+    </form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* HEADER PART */
+
+* {
+scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(odontologia-estudiantes-1421x794.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+
+header {
+ 
+  display: flex;
+  margin-top: 30px;
+  margin-left: 0px;
+  height: 70px;
+color: #64748b;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
+  position: sticky;
+top: 0;
+}
+
+header .home-logo {
+  display: flex;
+  align-items: center;
+}
+
+header .home-logo span {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  font-size: 19px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header .home-logo img {
+    
+  display: flex;
+  align-items: center;
+  width: 50px;
+}
+
+header .nav-header nav ul ol a {
+transition: all 0.3s ease;
+    color: #64748b;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 8px;
+  font-weight: 500;
+      border-radius: 10px;
+
+}
+
+header .nav-header nav ul ol a:hover{
+    
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+ 
+  
+}
+
+
+
+header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+header .user-info span {
+color: rgb(0, 0, 0);
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+header .user-info img {
+  display: flex;
+  align-items: center;
+  width: 40px;
+}
+
+header .user-info .dropdown {
+  position: relative;
+}
+
+header .user-info .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .user-info .dropdown-toggle img {
+  width: 30px;
+  margin-left: 8px;
+}
+
+header .user-info .dropdown-menu {
+    
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background: #ffffff;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  margin-bottom: 2px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu a:hover{
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    
+}
+/* main section about us  */
+
+main .about-us {
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  
+}
+
+main .about-us img {
+  width: 650px;
+}
+
+main .cover-about-us {
+  border-radius: 0px 30px;
+  display: flex;
+  border: 1px solid #e2e8f0;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+main .info-about-us {
+  width: 100%;
+}
+
+main .title-about-us h1 {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  color: white;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+main .title-about-us p {
+
+  display: flex;
+  text-align: justify;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+/* MAIN SECTION SERVICES */
+
+main .info-1 {
+
+    background-color: #fff;
+    height: 500px;
+    margin-top: 50px;
+   
+}
+
+main .info-1-title h1 {
+
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    
+}
+
+main .cover-info-card {
+    
+
+
+    display: flex;
+    text-align: center;
+   
+  
+}
+
+main .info-card {
+    
+
+    margin: 10px;
+    height: 380px;
+    border-radius: 10px;
+    transition: all 1 ease-in-out;
+    background: #e2e8f0;
+
+    
+    
+}
+
+main .info-card h1 {
+
+  
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+
+main .info-card p {
+ color: #64748b;
+  text-align: justify;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+ 
+}
+
+main .info-card img {
+    width: 150px;
+   
+}
+
+main .info-card a {
+  background: #0ea5e9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+ 
+}
+
+
+
+
+
+/* SECTION TRATAMIENTOS */
+
+
+main .cover-info-card-2 img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+main .info-2-title h1{
+  text-decoration: none;;
+  font-weight: 600;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+
+
+ 
+}
+
+
+main .first-tratamiento {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background: #e2e8f0;
+  margin: 2px;
+  align-items: center;
+  padding: 10px;
+
+  
+}
+
+main .first-tratamiento h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 300px;
+ 
+
+}
+
+main .first-tratamiento p {
+  color: #64748b;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+main .first-tratamiento span {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0ea5e9;
+  font-size: 18px;
+}
+
+main .first-tratamiento a {
+  background: #0ea5e9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}

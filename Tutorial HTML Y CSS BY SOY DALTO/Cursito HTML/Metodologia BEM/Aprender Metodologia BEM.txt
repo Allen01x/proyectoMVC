@@ -1,0 +1,28 @@
+- BEM Methodology - BY soy Dalto
+
+¿Que Significa BEM?
+Block Element Modifier o sus Siglas BEM, hace referencia a que se compone de bloques, elementos y modificadores.
+
+- Ventajas Metodologia BEM
+
+Reutilizar Codigo: Tenemos un estilo prefedefinido de un componente que luego reutilizaremos.
+
+Resolvemos problemos de Especificidad: Nos permite saber como escribir codigo y como nombrar a las clases para solamente viendolas saber que hacen y que significa, con clases nos resolvemos un monton de problemas al leerlo (codigo mas legible).
+
+- Elementos Metodologia BEM
+
+* Bloque: Componente independiente, no depende de absolutamente nadie para existir.
+
+* Elemento: Hace referencia a una parte de un bloque, adentro del bloque tiene sentido y forma parte de este.
+
+* Modifier: Una forma de modificar un bloque o un elemento, se agrega una clase modificadora.
+
+! Para usar correctamente la metodologia BEM en clases utilizamos dos guiones bajos y luego el nombre del elemento !
+Ejm:  class="List__item"
+
+! Para agregar una segunda clase modificadora damos un espacio y  ponemos el nombre del elemento y luego ponemos 2 guiones medios !
+Ejm: class="List__item item--Malo"
+
+¿Por que se usa una metodologia?
+Es una forma especifica de trabajar para mejorar optimizar la produccion del trabajo.
+

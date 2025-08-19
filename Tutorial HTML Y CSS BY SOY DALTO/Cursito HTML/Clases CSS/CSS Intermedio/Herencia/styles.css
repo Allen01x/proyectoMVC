@@ -1,0 +1,12 @@
+body {
+    color: brown;
+    font-family: sans-serif;
+}
+
+div {
+    color: blue;
+}
+
+h1 {
+    color: initial;
+}

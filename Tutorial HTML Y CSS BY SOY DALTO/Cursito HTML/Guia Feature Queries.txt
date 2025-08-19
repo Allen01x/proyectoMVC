@@ -1,0 +1,21 @@
+- FEATURE QUERIES - BY SOY DALTO
+
+1. Herramienta que permite a los desarolladores escribir codigo en caso de que el navegador soporte una funcionalidad.
+
+! Usamos @supports para darle la condicion de en caso que soporte tan regla, se le de a tal elemento !
+
+@supports (display: grid;){
+    body {
+        display: grid;
+    }
+}
+
+! Si no lo soporta usamos @supports not y la regla !
+
+/@supports not (display: grid;){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}/
+

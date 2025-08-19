@@ -1,0 +1,42 @@
+div {
+    padding: 20px;
+}
+
+/* Modifica la primera letra del TITULO */
+h1::first-letter {
+    color: rgb(156, 71, 71);
+    
+}
+
+/* Modificar la primera linea de una clase .parrafo dentro de un div */
+
+div .parrafo::first-line{
+    color: blue;
+    font-weight: bold;
+}
+
+/* Modificar la seleccion por encima del cursos de todos los div */
+
+div ::selection{
+    background-color: red;
+    color: white;
+}
+
+/* Modificar el placeholder de todos los input */
+
+input::placeholder{
+    color: red;
+    text-align: center;
+}
+
+/* Modificar los mark de las listas */
+
+li::marker{
+    color: aqua;
+}
+
+/* Añadir antes del elemento li, un texto */
+
+li::before {
+    content: "Servicio de: ";
+}

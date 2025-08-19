@@ -1,0 +1,32 @@
+li {
+    color: gray;
+}
+
+
+
+/* Selector de Atributo */
+
+img[src$=jpg] {
+    width: 90px;
+}
+
+/* Selector Descediente */
+
+ul li {
+    color: #666;
+}
+
+
+/* Selector por hijo directo*/
+
+li > strong{
+    color: red;
+}
+
+/* Selector Adyacente */
+
+h1 + p {
+    background-color: red;
+}
+
+

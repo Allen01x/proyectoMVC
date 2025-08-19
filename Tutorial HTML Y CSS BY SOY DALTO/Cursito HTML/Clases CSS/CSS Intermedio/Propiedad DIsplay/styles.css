@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    background-color: #48e;
+}
+
+.nav__list {
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item {
+    
+    display: inline-block;
+    padding: 20px;
+}
+
+
+
+.nav__link {
+    
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #48e;
+}
+
+.nav__link:hover {
+    background-color: #6af;
+}
+
+.link--button {
+
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 6px 20px;
+    color: #48e;
+    margin-left: 60px;
+}
+
+.link--button:hover{
+    background: transparent;
+    color: #fff;
+}
