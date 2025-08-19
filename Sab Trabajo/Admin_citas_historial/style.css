@@ -38,15 +38,17 @@ main {
 }
 
 .aside-header img {
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #fff;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+
 }
 
 .aside-header h1, h2 {
     margin-top: 10px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
 }
 
 .aside-content ul li{
@@ -70,14 +72,13 @@ main {
     width: 300px;
     height: 30px;
     text-align: center;
-   
+    
 }
 
 
 .aside-footer a{
-  
-   
    text-decoration: none;
+   color: #000;
 
 }
 
@@ -103,6 +104,7 @@ main {
     text-align: center;
     
 }
+
 
 .table-cover {
    
