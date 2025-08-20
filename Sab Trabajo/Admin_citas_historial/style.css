@@ -13,17 +13,15 @@ body {
 
 
 main {
-    display: flex;
+    
     text-align: center;
-
-
+  
 }
 
 .aside-panel {
-    background-color: rgb(255, 255, 255);
-    color: white;
+
     height: 100vh;
-    width: 350px;
+    color: white;
     padding: 15px;
 
 }
@@ -39,7 +37,6 @@ main {
 
 .aside-header img {
     margin-top: 10px;
-    background-color: #fff;
     border-radius: 10px;
     width: 150px;
 
@@ -47,36 +44,49 @@ main {
 
 .aside-header h1, h2 {
     margin-top: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
+     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
 }
 
+.aside-content ul {
+    display: flex;
+    justify-content: center;
+    
+
+}
 .aside-content ul li{
+
+
     list-style-type: none;
-   background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  
     padding: 20px;
-    margin: 20px;
+    margin: 30px 30px;
     
 
 }
 
 
 .aside-content ul li a{
+
     text-decoration: none;
     color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    padding: 10px;
 }
 
 
 .aside-footer {
-    margin:auto;
-    width: 300px;
-    height: 30px;
+    border-radius: 10px;
+    display: block;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     
 }
 
 
 .aside-footer a{
+    
    text-decoration: none;
    color: #000;
 
@@ -86,8 +96,7 @@ main {
 /*--- TABLA DATOS PACIENTE 1 --*/
 
 .table-datos-paciente {
-    align-self: center;
-    align-items: center;
+    height: 100%;
 }
 
 .table-title {
@@ -95,7 +104,7 @@ main {
     align-items: center;
     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
     color: white;
-    height: 200px;
+    height: 100px;
     
 }
 
@@ -107,24 +116,38 @@ main {
 
 
 .table-cover {
-   
-    height: 100vh;
-    width: 100vw;
+
 }
 
 
 .table-custom {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.table-custom th {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: left;
+    background: #0284c7;
+    color: white;
+    padding: 20px;
+    width: 20%;
+}
+
+
+
+.table-custom td {
    
-    padding: 20px;
-
+    text-align: justify;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
 }
 
-.table-custom thead{
-    
-    padding: 20px;
-
+.table-custom tr:nth-child(even) td {
+    background: #f8fafc;
 }
-
-
-
