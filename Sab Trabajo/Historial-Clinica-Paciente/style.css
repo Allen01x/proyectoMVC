@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Titulo historial paciente */
+
+.title-historial-clinico {
+
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.img-historial-clinico img {
+    width: 80px;
+
+    margin-left: 20px;
+
+}
+
+
+.about-historial-clinico {
+    margin-left: 30px;
+}
+
+.about-historial-clinico h2 {
+    border-radius: 10px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.about-historial-clinico p {
+    color: #000000;
+    text-align: center;
+    margin-top: 4px;
+
+}
+
+
+
+/* Formulario styles */
+
+form {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+form fieldset {
+    border: 5px solid rgb(0, 183, 255);
+    padding: 26px;
+    background-color: #ffffff;
+}
+
+
+.informacion-general {
+    font-size: 10px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.form_input {
+
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form_input label {
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.form_input label,
+textarea,
+input {
+    margin: auto;
+
+
+}
+
+.form_input textarea,
+input {
+    background-color: #ffff;
+    display: block;
+}
+
+.form_input textarea {
+    background-color: #fff;
+    overflow: scroll;
+    resize: none;
+    width: 190px;
+}
+
+.form_input input {
+    padding: 10px;
+    width: 14px;
+}

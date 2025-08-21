@@ -30,6 +30,52 @@
     <main>
 
 
+         <div class="table-datos-cita">
+            <div class="table-title table-title-cita">
+                <img src="image.png" alt="">
+                <h1>Citas Relacionadas</h1>
+            </div>
+
+           
+              <!-- Barra de búsqueda y filtros -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar cita...">
+    <select id="filterEspecialista">
+      <option value="">Filtrar por especialista</option>
+      <option value="Jose Marin Peña">Jose Marin Peña</option>
+    </select>
+    <input type="date" id="filterFecha">
+  </div>
+
+  <!-- Tabla -->
+  <div class="table-datos-cita">
+    <table id="tablaCitas" class="table-custom-cita">
+      <thead>
+        <tr>
+          <th>Cita ID</th>
+          <th>Especialista</th>
+          <th>Fecha</th>
+          <th>Hora inicio</th>
+          <th>Hora fin</th>
+          <th>Motivo</th>
+          <th>Observación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Cita ID">1</td>
+          <td data-label="Especialista">Jose Marin Peña</td>
+          <td data-label="Fecha">2025-08-20</td>
+          <td data-label="Hora inicio">07:00</td>
+          <td data-label="Hora fin">08:00</td>
+          <td data-label="Motivo" class="cita-info">Chequeo general</td>
+          <td data-label="Observación" class="cita-info">Paciente estable, se recomienda control en 6 meses.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+        </div>
+
         <div class="table-datos-paciente">
             <div class="table-title">
                 <img src="image (1)-Photoroom.png" alt="">
@@ -132,52 +178,7 @@
         </div>
 
 
-        <div class="table-datos-cita">
-            <div class="table-title table-title-cita">
-                <img src="image.png" alt="">
-                <h1>Citas Relacionadas</h1>
-            </div>
-
-           
-              <!-- Barra de búsqueda y filtros -->
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Buscar cita...">
-    <select id="filterEspecialista">
-      <option value="">Filtrar por especialista</option>
-      <option value="Jose Marin Peña">Jose Marin Peña</option>
-    </select>
-    <input type="date" id="filterFecha">
-  </div>
-
-  <!-- Tabla -->
-  <div class="table-datos-cita">
-    <table id="tablaCitas" class="table-custom-cita">
-      <thead>
-        <tr>
-          <th>Cita ID</th>
-          <th>Especialista</th>
-          <th>Fecha</th>
-          <th>Hora inicio</th>
-          <th>Hora fin</th>
-          <th>Motivo</th>
-          <th>Observación</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Cita ID">1</td>
-          <td data-label="Especialista">Jose Marin Peña</td>
-          <td data-label="Fecha">2025-08-20</td>
-          <td data-label="Hora inicio">07:00</td>
-          <td data-label="Hora fin">08:00</td>
-          <td data-label="Motivo" class="cita-info">Chequeo general</td>
-          <td data-label="Observación" class="cita-info">Paciente estable, se recomienda control en 6 meses.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-        </div>
-
+       
     </main>
 
      <script>
