@@ -138,92 +138,75 @@
                 <h1>Citas Relacionadas</h1>
             </div>
 
-            <table class="table-custom-cita">
-                <thead>
-                    <tr>
-                        <th class="space">Cita ID</th>
-                        <th class="space">Cita Especialista</th>
-                        <th class="space">Cita Fecha</th>
-                        <th class="space">Cita hora inició</th>
-                        <th class="space">Cita hora finalizó</th>
-                        <th>Motivo Cita</th>
-                        <th>Observacion Cita</th>
-                    </tr>
+           
+              <!-- Barra de búsqueda y filtros -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar cita...">
+    <select id="filterEspecialista">
+      <option value="">Filtrar por especialista</option>
+      <option value="Jose Marin Peña">Jose Marin Peña</option>
+    </select>
+    <input type="date" id="filterFecha">
+  </div>
 
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>Jose Marin Peña</td>
-                        <td>20/08/2025</td>
-                        <td>7:00</td>
-                        <td>8:00</td>
-                        <td class="cita-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex veritatis dolor officia modi asperiores deserunt illo sint cum voluptates magnam sit totam, labore quas cupiditate fugit assumenda, in dolores?</td>
-                        <td class="cita-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo et iste cupiditate incidunt. Itaque mollitia dicta ipsa id facere, reiciendis et, excepturi, accusamus voluptatibus assumenda eveniet nihil dolorem natus.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-             <table class="table-custom-cita">
-                <thead>
-                    <tr>
-                        <th class="space">Cita ID</th>
-                        <th class="space">Cita Especialista</th>
-                        <th class="space">Cita Fecha</th>
-                        <th class="space">Cita hora inició</th>
-                        <th class="space">Cita hora finalizó</th>
-                        <th>Motivo Cita</th>
-                        <th>Observacion Cita</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>Jose Marin Peña</td>
-                        <td>20/08/2025</td>
-                        <td>7:00</td>
-                        <td>8:00</td>
-                        <td class="cita-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex veritatis dolor officia modi asperiores deserunt illo sint cum voluptates magnam sit totam, labore quas cupiditate fugit assumenda, in dolores?</td>
-                        <td class="cita-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo et iste cupiditate incidunt. Itaque mollitia dicta ipsa id facere, reiciendis et, excepturi, accusamus voluptatibus assumenda eveniet nihil dolorem natus.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-             <table class="table-custom-cita">
-                <thead>
-                    <tr>
-                        <th class="space">Cita ID</th>
-                        <th class="space">Cita Especialista</th>
-                        <th class="space">Cita Fecha</th>
-                        <th class="space">Cita hora inició</th>
-                        <th class="space">Cita hora finalizó</th>
-                        <th>Motivo Cita</th>
-                        <th>Observacion Cita</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>Jose Marin Peña</td>
-                        <td>20/08/2025</td>
-                        <td>7:00</td>
-                        <td>8:00</td>
-                        <td class="cita-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex veritatis dolor officia modi asperiores deserunt illo sint cum voluptates magnam sit totam, labore quas cupiditate fugit assumenda, in dolores?</td>
-                        <td class="cita-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur explicabo et iste cupiditate incidunt. Itaque mollitia dicta ipsa id facere, reiciendis et, excepturi, accusamus voluptatibus assumenda eveniet nihil dolorem natus.</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-
-
+  <!-- Tabla -->
+  <div class="table-datos-cita">
+    <table id="tablaCitas" class="table-custom-cita">
+      <thead>
+        <tr>
+          <th>Cita ID</th>
+          <th>Especialista</th>
+          <th>Fecha</th>
+          <th>Hora inicio</th>
+          <th>Hora fin</th>
+          <th>Motivo</th>
+          <th>Observación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Cita ID">1</td>
+          <td data-label="Especialista">Jose Marin Peña</td>
+          <td data-label="Fecha">2025-08-20</td>
+          <td data-label="Hora inicio">07:00</td>
+          <td data-label="Hora fin">08:00</td>
+          <td data-label="Motivo" class="cita-info">Chequeo general</td>
+          <td data-label="Observación" class="cita-info">Paciente estable, se recomienda control en 6 meses.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
         </div>
 
     </main>
+
+     <script>
+    const searchInput = document.getElementById("searchInput");
+    const filterEspecialista = document.getElementById("filterEspecialista");
+    const filterFecha = document.getElementById("filterFecha");
+    const tablaCitas = document.getElementById("tablaCitas").getElementsByTagName("tbody")[0];
+
+    function filtrarCitas() {
+      const texto = searchInput.value.toLowerCase();
+      const especialista = filterEspecialista.value.toLowerCase();
+      const fecha = filterFecha.value;
+
+      for (let fila of tablaCitas.rows) {
+        let mostrar = true;
+        let contenidoFila = fila.innerText.toLowerCase();
+
+        if (texto && !contenidoFila.includes(texto)) mostrar = false;
+        if (especialista && !fila.cells[1].innerText.toLowerCase().includes(especialista)) mostrar = false;
+        if (fecha && fila.cells[2].innerText !== fecha) mostrar = false;
+
+        fila.style.display = mostrar ? "" : "none";
+      }
+    }
+
+    searchInput.addEventListener("keyup", filtrarCitas);
+    filterEspecialista.addEventListener("change", filtrarCitas);
+    filterFecha.addEventListener("change", filtrarCitas);
+  </script>
 </body>
 
 </html>
